@@ -1,0 +1,23 @@
+server:
+  port: 6969
+  servlet:
+    context-path: /synchronizationController
+
+spring:
+  datasource:
+    driverClassName: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@//192.168.1.140/pdb
+    username: centrala
+    password: almarwinnet
+    hikari:
+      maximum-pool-size: 10
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.OracleDialect
+        format_sql: true
+    open-in-view: false
