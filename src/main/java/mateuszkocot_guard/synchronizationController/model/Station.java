@@ -4,8 +4,9 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import jakarta.persistence.Id;
+import lombok.Getter;
 
-
+@Getter
 @Entity
 @Table(name = "STACJA")
 public class Station {
@@ -23,35 +24,4 @@ public class Station {
     @Column(name = "AKTYWNY")
     private int status;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getStationName() {
-        return stationName;
-    }
-
-    public void setStationName(String stationName) {
-        this.stationName = stationName;
-    }
-
-    public String getApiUrl() {
-        return apiUrl;
-    }
-
-    public void setApiUrl(String apiUrl) {
-        this.apiUrl = apiUrl;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
-    }
 }

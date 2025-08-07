@@ -1,7 +1,9 @@
 package mateuszkocot_guard.synchronizationController.service;
 
+import lombok.Data;
+import lombok.Getter;
 import mateuszkocot_guard.synchronizationController.model.Station;
-import mateuszkocot_guard.synchronizationController.model.VerificationResult; // <-- Nowy import
+import mateuszkocot_guard.synchronizationController.model.VerificationResult;
 import mateuszkocot_guard.synchronizationController.repository.StationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,6 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+@Data
+@Getter
 @Service
 public class VerificationService {
 
