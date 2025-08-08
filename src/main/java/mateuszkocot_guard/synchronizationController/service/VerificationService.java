@@ -1,6 +1,7 @@
 package mateuszkocot_guard.synchronizationController.service;
 
 
+import lombok.Data;
 import lombok.Getter;
 import mateuszkocot_guard.synchronizationController.model.Station;
 import mateuszkocot_guard.synchronizationController.model.VerificationResult;
