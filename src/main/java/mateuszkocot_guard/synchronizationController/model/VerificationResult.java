@@ -1,11 +1,10 @@
 package mateuszkocot_guard.synchronizationController.model;
 
-import lombok.Getter;
+import lombok.Data;
 
 import java.util.List;
 
-
-@Getter
+@Data
 public class VerificationResult {
 
     private String stationName;
